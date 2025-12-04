@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section{
+display: grid;
+grid-template-columns: 20% 60%;
+/*
+também podendo usar o valor "auto" ou
+usar a função repeat(4,25%); 4 é o numero de repetição e 25% o tamanho de cada coluna 
+*/
+grid-template-rows: 20% 60% 10%;
+height: 100vh;
+background-color: rgb(0, 180, 180);
+}
+
+div{
+    font-size: 40px;
+    font-weight: bold;
+    box-shadow: inset 0 0 2px ; 
+}
+
+
+

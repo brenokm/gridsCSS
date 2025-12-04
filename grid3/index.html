@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+
+        padding: 0;
+        margin: 0;
+        box-shadow: inset 0 0 2px black;
+    }
+    
+    div {
+        padding: 20px;
+    }
+    
+    section {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: [primeiro-start]  25% [primeiro-end segundo-start] 25% [segundo-end terceiro-start] 25% [ terceiro-end quarto-start] 25% [quarto-end];
+        
+        grid-template-rows: [row]25vh [row]50vh [row]auto;
+
+        /*obs
+        os nomes dentro dos [] não são necessarios para o funcionamento
+        grid-template-columns: 50%  50%  50%;
+        grid-template-rows: 25vh 50vh auto;
+
+        assim também funciona
+        
+        */
+    }
+
+    .NAVEGAÇÃO {
+        grid-row-start:row 1;
+        grid-column-start:primeiro-start ; 
+        grid-column-end:quarto-end ; 
+        
+        
+    }
+
+    .DIREITA {
+        grid-row-start: row 2;
+        grid-column-start: primeiro-start ; 
+        grid-column-end: segundo-end ; 
+        
+    }
+    .MEIO{
+        grid-row-start: row 2;
+        grid-column-start: segundo-start;
+         grid-column-end: terceiro-end ;
+        
+    }
+    .MEIO2{
+
+        grid-row-start: row 2;
+        grid-column-start: terceiro-start ;
+        grid-column-end: quarto-end;
+    }
+
+    .ESQUERDA {
+        grid-row-start: row 2;
+        grid-column-start: quarto-start ; 
+        grid-column-end: quarto-end ; 
+       
+    }
+
+    .FOOTER {
+         grid-row-start:row 3;
+        grid-column-start:primeiro-start ; 
+        grid-column-end:quarto-end ; 
+    }
+</style>
+
+<body>
+    <section>
+        <div class="NAVEGAÇÃO">NAVEGAÇÃO</div>
+        <div class="DIREITA">ARTIGO DIREITA</div>
+        <div class="MEIO">ARTIGO MEIO</div>
+        <div class="MEIO2">ARTIGO MEIO 2</div>
+        <div class="ESQUERDA">ARTIGO ESQUERDA</div>
+        <div class="FOOTER">FOOTER</div>
+    </section>
+
+</body>
+
+</html>

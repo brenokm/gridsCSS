@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+section{
+    display: grid;
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(200, 200, 200);
+    grid-template: 20% 20% 20%/ 20% 20% 20% ;
+    align-content: center;
+    justify-content:space-between ;
+    /*
+    ou
+    place-content: center space-around;
+    linhas e depois colunas
+    */
+    
+
+}
+.item1{background-color: rgb(0, 100, 0);}
+.item2{background-color: rgb(22, 105, 22);}
+.item3{background-color: rgb(48, 110, 48);}
+
+.item4{background-color: rgb(153, 0, 64);}
+.item5{background-color: rgb(155, 41, 88);}
+.item6{background-color: rgb(161, 70, 108);}
+
+.item7{background-color: rgb(15, 0, 153);}
+.item8{background-color: rgb(55, 43, 163);}
+.item9{background-color: rgb(84, 76, 158);}
+
+        
+
+    </style>
+
+    <section >
+        <div class="item1">A</div>
+        <div class="item2">B</div>
+        <div class="item3">C</div>
+
+        <div class="item4">D</div>
+        <div class="item5">E</div>
+        <div class="item6">F</div>
+
+        <div class="item7">G</div>
+        <div class="item8">H</div>
+        <div class="item9">I</div>
+
+    </section>
+</body>
+</html>

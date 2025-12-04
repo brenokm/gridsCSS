@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-shadow: inset 0 0 2px black;
+        }
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template:
+                [row1-star] "header header header" 10vh [row1-end] /*"headers" definem a quantidade de colunas e o vh a largura da LINHA*/
+                [row2-star] "nav content auau" auto [row2-end]     
+                [row3-star] "footer footer footer" 10vh[row3-end]  
+                /20vh 20vh auto;        /*aqui estão as larguras das colunas*/  
+                                      
+        }
+        div {
+            padding: 20px
+        }
+        .top {
+            grid-area: header;
+        }
+        .nav {
+            grid-area: nav;
+        }
+        .content {
+            grid-area: content;
+        }
+        .footer {
+            grid-area: footer;
+        }
+        .auau{
+            grid-area: auau;
+        }
+    </style>
+    <section class="container">
+
+        <div class="top">top</div>
+        <div class="nav">nav</div>
+        <div class="content">content</div>
+        <div class="auau">cachorro</div>
+        <div class="footer">footer</div>
+
+    </section>
+
+</body>
+
+</html>

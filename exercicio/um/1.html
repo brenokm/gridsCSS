@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-shadow: inset 0 0 2px black;
+    }
+    section{
+        background-color: aquamarine;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:[primeiro-start] 25% [primeiro-end segundo-start]25% [segundo-end terceiro-start] 25% [terceiro-end quarto-start] 25% [quarto-end] ;
+        grid-template-rows: [row]25% [row] auto [row]25%;
+        
+    }
+    div{
+        padding: 20px;
+    }
+    .header{
+        grid-row-start: row 1 ; 
+        grid-column-start: primeiro-start ;
+        grid-column-end: quarto-end;
+    }
+    .nav{
+
+        grid-row-start: 2 ; 
+        grid-column-start: primeiro-start ;
+        grid-column-end: primeiro-end;
+
+    }
+    .content{
+
+         grid-row-start: 2 ; 
+        grid-column-start: segundo-start ;
+        grid-column-end: quarto-end;
+    }
+    .footer{
+       grid-row-start: row 3 ; 
+        grid-column-start: primeiro-start ;
+        grid-column-end: quarto-end;
+    }
+</style>
+<body>
+      <section>
+        <div class="header">HEADER</div>
+        <div class="nav">NAV</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-shadow: inset 0 0 2px black;
+        }
+    
+        section {
+            display: grid;
+            height: 100vh;
+            grid-template:
+                [row1-start]"header header " 20vh[row1-end]
+                 [row2-start]"nav  content" auto[row2-end] 
+                 [row3-start]"footer footer " 20vh[row3-end]
+                  / 60vh auto;
+    
+        }
+    
+        div {
+            background-color: aquamarine;
+        }
+    
+        .HEADER {
+            grid-area: header;
+        }
+    
+        .NAV {
+            grid-area: nav;
+    
+        }
+    
+        .CONTENT {
+            grid-area: content;
+    
+        }
+    
+        .FOOTER {
+            grid-area: footer;
+        }
+    </style>
+
+
+
+<body>
+    
+
+    <section>
+        <div class="HEADER">HEADER</div>
+        <div class="NAV">NAV</div>
+        <div class="CONTENT">CONTENT</div>
+        <div class="FOOTER">FOOTER</div>
+    </section>
+</body>
+</html>

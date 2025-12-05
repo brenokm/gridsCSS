@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .grid {
+        display: grid;
+
+        /* Grid real: 12 colunas iguais */
+        grid-template-columns: repeat(12, 1fr);
+
+        gap: 10px;
+    }
+    div{
+        height: 20px;
+        width: 50%;
+        
+    }
+
+    .l1c1 {
+        grid-column: span 4;
+        background: #faa;
+        
+    }
+
+    .l1c2 {
+        grid-column: span 4;
+        background: #fbb;
+    }
+
+    .l1c3 {
+        grid-column: span 4;
+        background: #fcc;
+    }
+
+    /* 4 + 4 + 4 = 12 → 3 colunas aparentes */
+
+    .l2c1 {
+        grid-column: span 6;
+        background: #afa;
+    }
+
+    .l2c2 {
+        grid-column: span 6;
+        background: #bfb;
+    }
+
+    /* 6 + 6 = 12 → 2 colunas aparentes */
+
+    .l3c1 {
+        grid-column: span 3;
+        background: #aaf;
+    }
+
+    .l3c2 {
+        grid-column: span 3;
+        background: #bbf;
+    }
+
+    .l3c3 {
+        grid-column: span 3;
+        background: #ccf;
+    }
+
+    .l3c4 {
+        grid-column: span 3;
+        background: #ddf;
+    }
+
+    /* 3 + 3 + 3 + 3 = 12 → 4 colunas aparentes */
+</style>
+
+<body>
+
+    <div class="grid">
+        <div class="l1c1">L1 C1</div>
+        <div class="l1c2">L1 C2</div>
+        <div class="l1c3">L1 C3</div>
+
+        <div class="l2c1">L2 C1</div>
+        <div class="l2c2">L2 C2</div>
+
+        <div class="l3c1">L3 C1</div>
+        <div class="l3c2">L3 C2</div>
+        <div class="l3c3">L3 C3</div>
+        <div class="l3c4">L3 C4</div>
+    </div>
+
+
+</body>
+
+</html>
